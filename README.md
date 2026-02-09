@@ -1,2 +1,2 @@
 # Microcontroller-Lab
-Overview of Microcontroller coding projects that display LEDs and Numerical outputs on TI-MSP430
+Overview of Microcontroller coding projects using C to display LEDs and Numerical outputs on TI-MSP430
