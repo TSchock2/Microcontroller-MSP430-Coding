@@ -1,1 +1,0 @@
-Analog-to-Digital-Converter
