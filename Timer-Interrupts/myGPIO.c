@@ -25,7 +25,7 @@
 
 
 void Init_GPIO(void) {
-    P1OUT &= ~BIT0; // Turn off Red
-    P9OUT |= BIT7; // Turn on Green
+    P1OUT &= ~BIT0;                                                             // Turn off Red
+    P9OUT |= BIT7;                                                              // Turn on Green
     return;
 }
