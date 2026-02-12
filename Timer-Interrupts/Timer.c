@@ -27,19 +27,19 @@
 void Init_Timer_A0(void) {
 
     // TA0CTL
-    TA0CTL = 0x0110; // Set Control Register for 32.768 kHz, No Pre-Divide, and Timer A0 Up Mode
+    TA0CTL = 0x0110;                                                             // Set Control Register for 32.768 kHz, No Pre-Divide, and Timer A0 Up Mode
 
     // TA0CCTL0
-    TA0CCTL0 |= CCIE; // Enable Interrupt
+    TA0CCTL0 |= CCIE;                                                            // Enable Interrupt
 
     // TA0CCTL1
-    TA0CCTL1 = 0x00E0; // Set Reset/Set Mode for PWM
+    TA0CCTL1 = 0x00E0;                                                           // Set Reset/Set Mode for PWM
 
     // TA0CCR0
-    TA0CCR0 = 0x0CCD; // 100 mSec period
+    TA0CCR0 = 0x0CCD;                                                            // 100 mSec period
 
     // TA0CCR1
-    TA0CCR1 = 0x0666; // 50% Duty Cycle
+    TA0CCR1 = 0x0666;                                                            // 50% Duty Cycle
 
     return;
 }
