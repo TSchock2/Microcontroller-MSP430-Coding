@@ -63,7 +63,7 @@ void displayString(char *Str, unsigned int n)
     clearLCD();
 
     int i = 0;
-    while (i < 6) { // Loop to add each character to display
+    while (i < 6) {                                                        // Loop to add each character to display
         k = Str[i];
         showChar(k, position[i]);
         i++;
