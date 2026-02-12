@@ -47,9 +47,6 @@ PMM_unlockLPM5(); // Release all pins on MCU
 
 Init_GPIO(); // Initialize GPIO pins
 Init_Timer_A0(); // Initialize Timer A0
-
-P1DIR |= BIT0; // Initialize Bit 0 to pin 1 for Red
-P9DIR |= BIT7; // Initialize Bit 7 to pin 9 for Green
 __enable_interrupt(); // Enable interrupts
 
     while(1)
