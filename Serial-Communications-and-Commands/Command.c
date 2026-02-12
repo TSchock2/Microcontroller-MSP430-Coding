@@ -99,7 +99,7 @@ void parse_Command()
     /************************************* 4) Act on the Command *************************************************/
     switch(Command)
     {
-        case LE: // Enable LED
+        case LE:                                             // Enable LED
             LED_Test_Mode = TRUE;
             Temp_Mode = FALSE;
             RC_Voltage_Mode = FALSE;
@@ -110,7 +110,7 @@ void parse_Command()
             update_RGB();
             break;
 
-        case LH: // Hot! Flash LED Red
+        case LH:                                             // Hot! Flash LED Red
             if(LED_Test_Mode == TRUE)
             {
                 LED_Color = Red;
@@ -119,7 +119,7 @@ void parse_Command()
             }
             break;
 
-        case LR: // Red
+        case LR:                                             // Red
             if(LED_Test_Mode == TRUE)
             {
                 LED_Color = Red;
@@ -128,7 +128,7 @@ void parse_Command()
             }
             break;
 
-        case LC: // COLD! Flash Purple
+        case LC:                                             // COLD! Flash Purple
             if(LED_Test_Mode == TRUE)
             {
                 LED_Color = Violet;
@@ -137,7 +137,7 @@ void parse_Command()
             }
             break;
 
-        case LO: // Orange
+        case LO:                                             // Orange
             if(LED_Test_Mode == TRUE)
             {
                 LED_Color = Orange;
@@ -146,7 +146,7 @@ void parse_Command()
             }
             break;
 
-        case LY: // Yellow
+        case LY:                                            // Yellow
             if(LED_Test_Mode == TRUE)
             {
                 LED_Color = Yellow;
@@ -155,7 +155,7 @@ void parse_Command()
             }
             break;
 
-        case LG: // Green
+        case LG:                                            // Green
             if(LED_Test_Mode == TRUE)
             {
                 LED_Color = Green;
@@ -164,7 +164,7 @@ void parse_Command()
             }
             break;
 
-        case LB: // Blue
+        case LB:                                            // Blue
             if(LED_Test_Mode == TRUE)
             {
                 LED_Color = Blue;
@@ -173,7 +173,7 @@ void parse_Command()
             }
             break;
 
-        case LV: // Purple
+        case LV:                                            // Purple
             if(LED_Test_Mode == TRUE)
             {
                 LED_Color = Violet;
@@ -182,7 +182,7 @@ void parse_Command()
             }
             break;
 
-        case RE: // Display Temp
+        case RE:                                            // Display Temp
             Temp_Mode = FALSE;
             RC_Voltage_Mode = TRUE;
             LED_Test_Mode = FALSE;
@@ -195,7 +195,7 @@ void parse_Command()
             displayVolts();
             break;
 
-        case TE: // Display Volts
+        case TE:                                            // Display Volts
             Temp_Mode = TRUE;
             RC_Voltage_Mode = FALSE;
             LED_Test_Mode = FALSE;
