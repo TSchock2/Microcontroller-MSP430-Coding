@@ -1,1 +1,0 @@
-ADC and Temp Control
